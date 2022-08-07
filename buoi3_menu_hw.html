@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        #header{
+            background: url(hinh/bk.png);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        #header .nav{
+            display: flex;
+            background: #00aeef;
+            width: 100%;
+            padding: 10px;
+            align-items: center;
+        }
+        #header .nav .menu{
+            width: 50%;
+            color: #fff;
+            font-weight: 100;
+        }
+        #header .nav .logo{
+            width: 50%;
+            
+        }
+        #header .menu ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+        #header .content{
+            text-align: center;
+            line-height: 50px;
+            padding: 174px 30px;
+            color: #3867d6;
+        }
+        .logo1{
+            height: 100px;
+            float: left;
+        }
+        h1{
+            font-size: 80px;
+        }
+        p{
+            color: #182C61;
+            font-size: 50px;
+            opacity: 50%;
+        }
+        a.button{
+            display: inline-block;
+            padding: 8px 16px;
+            background: #0099ff;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        header .nav .menu .menu1 .menu2{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="nav">
+            <div class="logo">
+                <img class="logo1" src="hinh/Logo BK.png">
+            </div>
+            <div class="menu">
+                <ul class="menu1">
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Enrolment</a></li>
+                    <li><a href="#">Curriculums</a>
+                        <ul class="menu2">
+                            <li><a href="#">Laptop 1</a></li>
+                            <li><a href="#">Laptop 2</a></li>
+                            <li><a href="#">Laptop 3</a></li>
+                            <li><a href="#">Laptop 4</a></li>
+                            <li><a href="#">Laptop 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Student Activity</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>HO CHI MINH UNIVERSITY OF TECHNOLOGY</h1>
+            <p>Politically sound - Expertised - Unmingled - Well built</p>
+            <a href="#" class="button">
+                    <span class="icon">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                       </span> 
+                       <span class="text">
+                        Contact
+                       </span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

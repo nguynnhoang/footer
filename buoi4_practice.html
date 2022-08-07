@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background: url(hinh/buoi4.jpg);
+            height: 100vh;
+            background-size: cover;
+        }
+        header .nav{
+            position: absolute;
+            top: 0%;
+            left: 25%;
+        }
+        header .nav .menu1{
+            list-style: none;
+            display: flex;
+        }
+        header .nav .menu1 li{
+            padding: 20px 50px;
+            position: relative;
+            white-space: nowrap;
+            background: #176090;
+        }
+        header .nav .menu1 li a{
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        header .menu1 .menu2{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            list-style: none;
+        }
+        header .menu1 li:hover .menu2{
+            display: block;
+        }
+        header .menu1 .menu2 .menu3{
+            display: none;
+            position: absolute;
+            top:0%;
+            left: 100%;
+            list-style: none;
+        }
+        header .menu2 li:hover .menu3{
+            display: block;
+        }
+        header .menu1 li:hover{
+            background-color: #273c75;
+        }
+        header .menu2 li{
+            border-bottom: 1px solid #192a56;
+        }
+        header .menu2 li:last-child{
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul class="menu1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a>
+                    <ul class="menu2">
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Mobile phone</a></li> 
+                        <li><a href="#">PC</a></li> 
+                        <li><a href="#">Others</a>
+                            <ul class="menu3">
+                                <li><a href="#">Phone Case</a></li>
+                                <li><a href="#">Cable</a></li> 
+                                <li><a href="#">Earphone</a></li> 
+                                <li><a href="#">Headphone</a></li>  
+                            </ul>
+                        </li>    
+                    </ul>
+                </li> 
+                <li><a href="#">Brands</a>
+                    <ul class="menu2">
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Apple</a></li> 
+                        <li><a href="#">Sony</a></li> 
+                        <li><a href="#">Xiaomi</a></li> 
+                        <li><a href="#">Oppo</a></li>    
+                    </ul>
+                </li>
+                <li><a href="#">Guarantee</a></li> 
+                <li><a href="#">About Us</a></li> 
+                <li><a href="#">Contact</a></li>    
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

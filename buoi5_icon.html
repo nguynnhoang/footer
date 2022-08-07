@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        a{
+            text-decoration: none;
+            background: orange;
+            width: 40px;
+            height: 40px;
+            display: inline-block;/*block: do the a la the dac biet nen phai dung block de tao width va height*/
+            /*inline de nhung block do nam tren cung 1 dong*/
+            margin: 4px;
+            border-radius: 50%;
+            text-align: center;
+            /*can chinh giua so voi thang cha*/
+            line-height: 40px;
+        }
+        #product-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #product-list .product{
+            width: calc(100% / 4 - 12px);
+            border: 1px solid orange;
+            height: 30vh;
+            margin: 5px;
+        }
+        @media screen and (max-width: 900px) {
+            #product-list .product{
+                width: calc(100% / 2 - 12px);
+            }
+        }
+        @media screen and (max-width: 400px) {
+            #product-list .product{
+                width: calc(100% - 12px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <div id="product-list">
+        <div class="product">
+            product 1
+        </div>
+        <div class="product">
+            product 2
+        </div>
+        <div class="product">
+            product 3
+        </div>
+        <div class="product">
+            product 4
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background: url(hinh/bk.png);
+            height: 100vh;
+            background-size: cover;
+        }
+        header .nav{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 50px;
+            height: 50px;
+        }
+        header .nav .menu1{
+            list-style: none;
+            display: flex;
+            background-color: #192a56;
+        }
+        header .nav .menu1 li{
+            padding: 20px 50px;
+            position: relative;
+            white-space: nowrap;
+        }
+        header .nav .menu1 li a{
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        header .menu1 .menu2{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            list-style: none;
+        }
+        header .menu1 li:hover .menu2{
+            display: block;
+        }
+        header .menu1 .menu2 .menu3{
+            display: none;
+            position: absolute;
+            top:0%;
+            left: 100%;
+            list-style: none;
+        }
+        header .menu2 li:hover .menu3{
+            display: block;
+        }
+        header .menu1 li:hover{
+            background-color: #273c75;
+        }
+        header .menu2 li{
+            border-bottom: 1px solid #192a56;
+        }
+        header .menu2 li:last-child{
+            border-bottom: none;
+        }
+        header .content{
+            text-align: center;
+            line-height: 50px;
+            padding: 174px 30px;
+            color: #08215b;
+        }
+        #logo img{
+            width: 500px;
+            align-items: center;
+        }
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul class="menu1">
+                <li>
+                    <a href="#">
+                        <img src="hinh/Logo BK.png" alt="">
+                    </a>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Amission</a>
+                    <ul class="menu2">
+                        <li><a href="#">Apply online</a></li>
+                        <li><a href="#">Admission process</a></li> 
+                        <li><a href="#">Admission reqirements</a></li> 
+                        <li><a href="#">Fees and Scholarships</a>
+                        <li><a href="#">Payment</a></li> 
+                    </ul>
+                </li> 
+                <li><a href="#">Study Programs</a>
+                    <ul class="menu2">
+                        <li><a href="#">Pre-University Program</a>
+                            <ul class="menu3">
+                                <li><a href="#">Soft Skills</a></li>
+                                <li><a href="#">Liberal Art</a></li>
+                                <li><a href="#">Social Skills</a></li>
+                                <li><a href="#">English course</a></li>
+                                <li><a href="#">Japanese course</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Bachelor Degree</a>
+                            <ul class="menu3">
+                                <li><a href="#">Architecture</a></li>
+                                <li><a href="#">Aerospace Engineering</a></li>
+                                <li><a href="#">Automative Engineering</a></li>
+                                <li><a href="#">Business administration</a></li>
+                                <li><a href="#">Biomedical engineering</a></li>
+                                <li><a href="#">Bridge and Highway engineering</a></li>
+                                <li><a href="#">Civil engineering</a></li>
+                                <li><a href="#">Chemical engineering</a></li>
+                                <li><a href="#">Computer engineering</a></li>
+                                <li><a href="#">Computer science</a></li>
+                                <li><a href="#">Electric & Electrical engineering</a></li>
+                                <li><a href="#">Environental engineering</a></li>
+                                <li><a href="#">Food technology</a></li>
+                                <li><a href="#">Mechanical engineering</a></li>
+                                <li><a href="#">Petroleum engineering</a></li>
+                                <li><a href="#">Robot engineering</a></li>
+                            </ul>
+                        </li> 
+                        <li><a href="#">Master Degree</a></li> 
+                        <li><a href="#">Exchange Program</a></li>   
+                    </ul>
+                </li>
+                <li><a href="#">Scholarship</a>
+                    <ul class="menu2">
+                        <li><a href="#">Bach Khoa Scholarships</a></li>
+                        <li><a href="#">Research Sponsorship</a></li>
+                        <li><a href="#">Exchange Program Scholarships</a></li>
+                    </ul>
+                </li> 
+                <li><a href="#">Partner Universities</a>
+                    <ul class="menu2">
+                        <li><a href="#">Australia</a>
+                            <ul class="menu3">
+                                <li><a href="#">The University of Queensland</a></li>
+                                <li><a href="#">Griffith University</a></li>
+                                <li><a href="#">The University of Adalaide</a></li>
+                                <li><a href="#">University of Technology-Sydney</a></li>
+                                <li><a href="#">Maccquarie University</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">USA</a>
+                            <ul class="menu3">
+                                <li><a href="#">Rutgers University</a></li>
+                                <li><a href="#">University of Illinois at Springfield</a></li>
+                                <li><a href="#">Catholic University of America</a></li>
+                                <li><a href="#">University of Illinois at Urbana Champaign</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Japan</a>
+                            <ul class="menu3">
+                                <li><a href="#">Nagaoka University of Technology</a></li>
+                                <li><a href="#">Kanazawa University</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li> 
+                <li><a href="#">Study Environment</a>
+                    <ul class="menu2">
+                        <li><a href="#">Why study in Vietnam?</a></li>
+                        <li><a href="#">Why study in HCMUT</a></li>
+                        <li><a href="#">Our Campuses</a></li>
+                        <li><a href="#">Our Facilities</a></li>
+                        <li><a href="#">Student Activities</a></li>
+                        <li><a href="#">Dormitory</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#">Contact Us</a></li>  
+            </ul>
+        </div>
+        <div class="content">
+            <a href="#" id="logo">
+                <img src="hinh/Logo BK.png">    
+            </a>
+            <h1>HO CHI MINH UNIVERSITY OF TECHNOLOGY</h1>
+        </div>
+    </header>
+</body>
+</html>

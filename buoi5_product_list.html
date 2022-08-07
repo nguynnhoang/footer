@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container h1{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        a{
+            text-decoration:none;
+        }
+        h1{
+            font-family: 'Jost', sans-serif;
+        }
+        img{
+            width: 100%;
+            transition: .4s;
+        }
+        .container .product-list{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto; /*can giua man hinh */
+        }
+        .container .product-list .product{
+            width: 25%;
+            padding: 0 15px;
+            text-align: center;
+            transition: .4s; /*make hover smoother*/
+        }
+        .container .product-list .product-thumbnail{
+            position: relative;
+            overflow: hidden; /*khong cho thanh phan con tran ra ngoai*/
+        }
+        .container .product-list .product:hover{
+            transform: translateY(-20px);
+        }
+        .container .product-list .product:hover img{
+            transform: scale(120%);
+        }
+        .container .product-list .product-name:hover{
+            color: rgb(131, 33, 33);
+        }
+        .product .product-brand{
+            color: #868686;
+            font-size: 10px;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .product .product-name{
+            color: black;
+            font-size: 14px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .product .product-price{
+            color: #868686;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .product .product-review{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .product .product-review .review-icon{
+            margin-right: 8px;
+            color: #ff9e21;
+            font-size: 10px;
+        }
+        .product .product-review .review-text{
+            font-size: 10px;
+            color: #666;
+        }
+        @media screen and (max-width: 800px) {
+            .container .product-list .product{
+            width: 50%;
+            margin-bottom: 50px;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .container .product-list .product{
+            width: 100%;
+            }
+        }
+        .container .product-list .sale{
+            color: #fff;
+            font-size: 14px;
+            font-family: 'Jost', sans-serif;
+            position: absolute; 
+            /*phai them position:relative vao cha cua phan co position la absolute*/
+            background: #b12a2a;
+            top: 10px;
+            left: 10px;
+            padding: 2px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TRENDING PRODUCTS</h1>
+        <div class="product-list">
+            <div class="product">
+                <div class="product-thumbnail">
+                    <img src="hinh/product_1.jpg" alt="product image">
+                </div>
+                <p class="product-brand">FOSSIL</p>
+                <a href="#" class="product-name">BERING ROSE GOLD STEEL MESH</a>
+                <p class="product-price">$100.000 - $350.000</p>
+                <div class="product-review">
+                    <div class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="review-text">
+                        (1 review)
+                    </span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-thumbnail">
+                    <img src="hinh/product_2.jpg" alt="product image">
+                </div>
+                <p class="product-brand">FOSSIL</p>
+                <a href="#" class="product-name">BERING ROSE GOLD STEEL MESH</a>
+                <p class="product-price">$100.000 - $350.000</p>
+                <div class="product-review">
+                    <div class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="review-text">
+                        (1 review)
+                    </span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-thumbnail">
+                    <img src="hinh/product_3.jpg" alt="product image">
+                    <div class="sale">-17%</div>
+                </div>
+                <p class="product-brand">FOSSIL</p>
+                <a href="#" class="product-name">BERING ROSE GOLD STEEL MESH</a>
+                <p class="product-price">$100.000 - $350.000</p>
+                <div class="product-review">
+                    <div class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="review-text">
+                        (1 review)
+                    </span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-thumbnail">
+                    <img src="hinh/product_4.jpg" alt="product image">
+                    <div class="sale">-17%</div>
+                </div>
+                <p class="product-brand">FOSSIL</p>
+                <a href="#" class="product-name">BERING ROSE GOLD STEEL MESH</a>
+                <p class="product-price">$100.000 - $350.000</p>
+                <div class="product-review">
+                    <div class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="review-text">
+                        (1 review)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
